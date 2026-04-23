@@ -20,7 +20,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/specink?color=0f172a&labelColor=e2e8f0&style=flat-square)](https://pypi.org/project/specink/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-0f172a?labelColor=e2e8f0&style=flat-square)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-0f172a?labelColor=e2e8f0&style=flat-square)](LICENSE)
-[![Tests](https://img.shields.io/github/actions/workflow/status/yourusername/specink/test.yml?label=tests&color=0f172a&labelColor=e2e8f0&style=flat-square)](https://github.com/yourusername/specink/actions)
+[![Tests](https://img.shields.io/github/actions/workflow/status/kamalhasanminhas/specink/ci.yml?label=tests&color=0f172a&labelColor=e2e8f0&style=flat-square)](https://github.com/kamalhasanminhas/specink/actions)
 
 </div>
 
