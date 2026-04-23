@@ -284,6 +284,27 @@ Yes. `ink drift` exits with code 1 if drift is detected, making it suitable as a
 
 ---
 
+## CI/CD & Deployment
+
+The project uses GitHub Actions for continuous integration and deployment:
+
+**CI Workflow** (runs on every push):
+- Linting with `ruff`
+- Type checking with `mypy`
+- Tests with `pytest`
+- Runs on Python 3.11 and 3.12
+
+**Release Workflow** (runs on push to `main`):
+- All CI checks
+- Build package with `uv build`
+- Publish to PyPI with `uv publish`
+
+**To enable PyPI deployment:**
+1. Generate a PyPI API token at https://pypi.org/manage/account/token/
+2. Add it as a repository secret named `PYPI_TOKEN` in GitHub Settings → Secrets and variables → Actions
+
+---
+
 ## Contributing
 
 Contributions are welcome. Please read the [contributing guide](CONTRIBUTING.md) before opening a PR.
