@@ -1,0 +1,44 @@
+[project]
+name = "specink"
+version = "0.1.0"
+description = "Spec-driven development with ink — every decision, written permanently."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "SpecInk Contributors" }
+]
+readme = "README.md"
+dependencies = [
+    "typer>=0.12",
+    "rich>=13",
+    "pyyaml>=6",
+    "questionary>=2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff",
+    "mypy",
+    "types-pyyaml",
+]
+
+[project.scripts]
+ink = "specink.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
