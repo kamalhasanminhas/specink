@@ -34,7 +34,7 @@ def conflicts_command(verbose: bool = False) -> None:
     for (change_a, change_b), items in grouped.items():
         console.print(f"  [cyan]{change_a}[/cyan]  ×  [cyan]{change_b}[/cyan]")
         for file_path, section in items:
-            console.print(f"    └─ {file_path} § \"{section}\"")
+            console.print(f'    └─ {file_path} § "{section}"')
         console.print()
 
     console.print(

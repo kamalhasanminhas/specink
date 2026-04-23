@@ -1,6 +1,5 @@
 """Drift command."""
 
-
 import typer
 from rich.console import Console
 

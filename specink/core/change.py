@@ -21,11 +21,7 @@ def list_active_changes(specink_root: Path) -> list[str]:
     if not changes_dir.exists():
         return []
 
-    return [
-        d.name
-        for d in changes_dir.iterdir()
-        if d.is_dir() and d.name != "archive"
-    ]
+    return [d.name for d in changes_dir.iterdir() if d.is_dir() and d.name != "archive"]
 
 
 def list_archived_changes(specink_root: Path) -> list[str]:
